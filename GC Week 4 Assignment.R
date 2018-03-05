@@ -100,4 +100,5 @@ head(tidy_group)
 tidy_mean <- summarise_all(tidy_group, funs(mean))
 head(tidy_mean)
  
-                            
+#write table
+write.table(tidy_mean,file="tidydata.txt")                               
